@@ -19,6 +19,10 @@
         color: rgb(99, 99, 99);
     }
 
+    .map-card .card-title {
+        color: rgb(209, 209, 209);
+    }
+
     .loading-container {
         background-color: rgb(31, 31, 31);
     }

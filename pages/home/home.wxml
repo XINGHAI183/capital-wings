@@ -9,6 +9,22 @@
   </view>
   
   <view class="content">
+    <view class="card map-card">
+      <text class="card-title">北京分区地图</text>
+      <view class="map-container">
+        <map
+          id="beijingMap"
+          longitude="{{mapData.longitude}}"
+          latitude="{{mapData.latitude}}"
+          scale="{{mapData.scale}}"
+          min-scale="6"
+          markers="{{mapData.markers}}"
+          show-location
+          style="width: 100%; height: 100%;"
+        ></map>
+      </view>
+    </view>
+    
     <view class="card">
       <text class="card-title">保护知识</text>
       <text class="card-desc">内容待填充</text>

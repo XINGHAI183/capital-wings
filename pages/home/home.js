@@ -1,7 +1,54 @@
 Page({
   data: {
     isLoading: true,
-    hasLoaded: false
+    hasLoaded: false,
+    mapData: {
+      longitude: 116.4074,
+      latitude: 39.9042,
+      scale: 10,
+      markers: [
+        {
+          id: 0,
+          latitude: 39.9042,
+          longitude: 116.4074,
+          title: '天安门',
+          width: 30,
+          height: 40
+        },
+        {
+          id: 1,
+          latitude: 39.9163,
+          longitude: 116.3972,
+          title: '故宫',
+          width: 30,
+          height: 40
+        },
+        {
+          id: 2,
+          latitude: 39.9417,
+          longitude: 116.3912,
+          title: '什刹海',
+          width: 30,
+          height: 40
+        },
+        {
+          id: 3,
+          latitude: 39.9465,
+          longitude: 116.3745,
+          title: '鼓楼',
+          width: 30,
+          height: 40
+        },
+        {
+          id: 4,
+          latitude: 39.8845,
+          longitude: 116.4106,
+          title: '天坛',
+          width: 30,
+          height: 40
+        }
+      ]
+    }
   },
   onLoad() {
     // 如果是首次加载，显示加载动画

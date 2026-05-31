@@ -41,6 +41,26 @@
   color: #999999;
 }
 
+.map-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.map-card .card-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  padding: 30rpx 30rpx 0 30rpx;
+  margin-bottom: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 500rpx;
+  margin-top: 20rpx;
+}
+
 /* 加载动画样式 */
 .loading-container {
   display: flex;
