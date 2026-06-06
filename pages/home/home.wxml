@@ -5,7 +5,7 @@
   
   <view class="content">
     <view class="card map-card">
-      <text class="card-title">北京分区地图</text>
+      <text class="card-title">观鸟地图</text>
       <view class="map-container">
         <map
           id="beijingMap"
