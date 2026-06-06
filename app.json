@@ -16,6 +16,11 @@
   },
   "darkmode": true,
   "themeLocation": "theme.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于显示在地图上"
+    }
+  },
   "tabBar": {
     "custom": true,
     "color": "#555555",

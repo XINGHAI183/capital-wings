@@ -1,9 +1,4 @@
-<view wx:if="{{isLoading}}" class="loading-container">
-  <view class="loading-spinner"></view>
-  <text class="loading-text">加载中...</text>
-</view>
-
-<view wx:else class="container">
+<view class="container">
   <view class="header">
     <text class="title">鸟类保护</text>
   </view>
@@ -40,4 +35,9 @@
       <text class="card-desc">内容待填充</text>
     </view>
   </view>
+</view>
+
+<view wx:if="{{isLoading}}" class="loading-container">
+  <view class="loading-spinner"></view>
+  <text class="loading-text">加载中...</text>
 </view>
