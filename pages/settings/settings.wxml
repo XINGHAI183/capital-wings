@@ -7,15 +7,7 @@
     <!-- 主题设置 -->
     <view class="section">
       <text class="section-title">主题设置</text>
-      
-      <radio-group class="radio-group" bindchange="onThemeChange">
-        <label class="radio-item" wx:for="{{themes}}" wx:key="value">
-          <radio value="{{item.value}}" checked="{{item.checked}}"/>
-          <text>{{item.name}}</text>
-        </label>
-      </radio-group>
-      
-      <text class="section-note">该功能暂不可用</text>
+      <text class="section-desc">请在微信"我 > 设置 > 通用 > 深色模式"或手机系统中切换深色模式</text>
     </view>
   </view>
 </view>

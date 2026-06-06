@@ -1,19 +1,10 @@
 Page({
   data: {
     isLoading: true,
-    hasLoaded: false,
-    themes: [
-      { name: '跟随系统', value: 'auto', checked: true },
-      { name: '浅色模式', value: 'light', checked: false },
-      { name: '深色模式', value: 'dark', checked: false }
-    ],
-    currentTheme: 'auto' // 默认跟随系统
+    hasLoaded: false
   },
 
   onLoad() {
-    // 初始化主题设置
-    this.initThemeSetting();
-    
     // 如果是首次加载，显示加载动画
     if (!this.data.hasLoaded) {
       setTimeout(() => {
@@ -55,58 +46,6 @@ Page({
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().updateNavigationBar();
     }
-  },
-
-  initThemeSetting() {
-    // 获取当前主题设置
-    const savedTheme = wx.getStorageSync('userTheme') || 'auto';
-    this.setData({
-      currentTheme: savedTheme
-    });
-    
-    // 更新单选按钮的状态
-    const updatedThemes = this.data.themes.map(theme => ({
-      ...theme,
-      checked: theme.value === savedTheme
-    }));
-    
-    this.setData({
-      themes: updatedThemes
-    });
-  },
-
-  onThemeChange(e) {
-    const selectedValue = e.detail.value;
-    
-    // 更新单选按钮状态
-    const updatedThemes = this.data.themes.map(theme => ({
-      ...theme,
-      checked: theme.value === selectedValue
-    }));
-    
-    this.setData({
-      themes: updatedThemes,
-      currentTheme: selectedValue
-    });
-    
-    // 保存用户选择的主题设置
-    wx.setStorageSync('userTheme', selectedValue);
-    
-    // 提示用户重启应用以应用新主题
-    wx.showModal({
-      title: '提示',
-      content: '主题将在下次启动应用时生效，是否立即重启？',
-      confirmText: '立即重启',
-      cancelText: '稍后重启',
-      success: (res) => {
-        if (res.confirm) {
-          // 重启应用
-          wx.reLaunch({
-            url: '/pages/home/home'
-          });
-        }
-      }
-    });
   },
 
   reload() {

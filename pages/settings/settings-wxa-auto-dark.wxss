@@ -15,8 +15,8 @@
         color: rgb(209, 209, 209);
     }
 
-    .radio-item {
-        color: rgb(209, 209, 209);
+    .section-desc {
+        color: rgb(170, 170, 170);
     }
 
     .loading-container {
