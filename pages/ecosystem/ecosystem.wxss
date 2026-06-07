@@ -76,4 +76,4 @@
   100% { transform: rotate(360deg); }
 }
 
-@import 'architecture-wxa-auto-dark.wxss'
+@import 'ecosystem-wxa-auto-dark.wxss'

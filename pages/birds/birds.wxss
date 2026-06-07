@@ -76,4 +76,4 @@
   100% { transform: rotate(360deg); }
 }
 
-@import 'swift-wxa-auto-dark.wxss'
+@import 'birds-wxa-auto-dark.wxss'

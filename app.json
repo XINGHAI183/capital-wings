@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/swift/swift",
-    "pages/architecture/architecture",
+    "pages/ecosystem/ecosystem",
+    "pages/birds/birds",
     "pages/profile/profile",
     "pages/settings/settings"
   ],
@@ -33,12 +33,12 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/swift/swift",
-        "text": "北京雨燕"
+        "pagePath": "pages/ecosystem/ecosystem",
+        "text": "生态"
       },
       {
-        "pagePath": "pages/architecture/architecture",
-        "text": "古建筑"
+        "pagePath": "pages/birds/birds",
+        "text": "图鉴"
       },
       {
         "pagePath": "pages/profile/profile",

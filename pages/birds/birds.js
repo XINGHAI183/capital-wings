@@ -31,7 +31,7 @@ Page({
         });
       }, 800);
     }
-    
+
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().setData({
         selected: 2
@@ -49,12 +49,12 @@ Page({
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().updateNavigationBar();
     }
-    
+
     // 重新应用页面数据以确保样式正确更新
     this.setData({
       isLoading: true
     });
-    
+
     // 延迟一段时间以确保主题切换系统完成
     const that = this;
     setTimeout(() => {

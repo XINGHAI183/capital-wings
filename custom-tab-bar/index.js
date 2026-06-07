@@ -9,12 +9,12 @@ Component({
         text: '首页'
       },
       {
-        pagePath: '/pages/swift/swift',
-        text: '雨燕'
+        pagePath: '/pages/ecosystem/ecosystem',
+        text: '生态'
       },
       {
-        pagePath: '/pages/architecture/architecture',
-        text: '古建'
+        pagePath: '/pages/birds/birds',
+        text: '图鉴'
       },
       {
         pagePath: '/pages/profile/profile',
