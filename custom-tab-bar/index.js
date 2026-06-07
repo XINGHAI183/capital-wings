@@ -9,12 +9,12 @@ Component({
         text: '首页'
       },
       {
-        pagePath: '/pages/swift/swift',
-        text: '雨燕'
+        pagePath: '/pages/ecosystem/ecosystem',
+        text: '生态'
       },
       {
-        pagePath: '/pages/architecture/architecture',
-        text: '古建'
+        pagePath: '/pages/birds/birds',
+        text: '图鉴'
       },
       {
         pagePath: '/pages/profile/profile',
@@ -29,15 +29,21 @@ Component({
       wx.switchTab({ url });
     },
     updateNavigationBar(title = 'eBird') {
+      // 获取系统主题信息
+      const systemInfo = wx.getSystemInfoSync();
+      const isDarkMode = systemInfo.theme === 'dark';
+      
       wx.setNavigationBarTitle({
         title: title
       });
+      
+      // 根据主题设置导航栏颜色
       wx.setNavigationBarColor({
-        frontColor: '#000000',
-        backgroundColor: '#FFFFFF',
+        frontColor: isDarkMode ? '#ffffff' : '#000000',
+        backgroundColor: isDarkMode ? '#000000' : '#FFFFFF',  // 深色模式下使用纯黑
         animation: {
-          duration: 0,
-          timingFunc: 'linear'
+          duration: 300,  // 增加动画时间，让主题切换更平滑
+          timingFunc: 'easeInOut'
         }
       });
     }

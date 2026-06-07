@@ -1,12 +1,13 @@
 .container {
-  padding: 20rpx;
+  padding: 20rpx 20rpx calc(130rpx + env(safe-area-inset-bottom));
   min-height: 100vh;
-  background-color: #EBEBEB;
+  box-sizing: border-box;
+  background-color: #E0E0E0;
 }
 
 .header {
-  padding: 40rpx 0;
-  text-align: center;
+  padding: 40rpx 20rpx;
+  text-align: left;
 }
 
 .title {
@@ -39,6 +40,165 @@
   display: block;
   font-size: 28rpx;
   color: #999999;
+}
+
+.map-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.map-card .card-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  padding: 30rpx 30rpx 0 30rpx;
+  margin-bottom: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 500rpx;
+  margin-top: 20rpx;
+}
+
+/* 每日一鸟卡片 */
+.daily-bird-card {
+  /* 复用 .card 的内边距与圆角 */
+}
+
+.daily-bird-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.daily-bird-image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #E0E0E0;
+  border-radius: 12rpx;
+}
+
+.daily-bird-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.bird-name {
+  font-family: "宋体", SimSun, serif;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8rpx;
+}
+
+.bird-latin {
+  font-style: italic;
+  font-size: 26rpx;
+  color: #666666;
+  margin-bottom: 12rpx;
+}
+
+.bird-intro {
+  font-size: 26rpx;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 当季常见鸟类轮播 */
+.season-bird-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.season-bird-card .season-bird-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.season-bird-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 30rpx 20rpx 30rpx;
+}
+
+.season-bird-current-name {
+  font-size: 32rpx;
+  font-weight: 300;
+  color: #333333;
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 16rpx;
+}
+
+.season-bird-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500rpx;
+  margin-top: 0;
+}
+
+.season-bird-image {
+  width: 100%;
+  height: 100%;
+  background-color: #E0E0E0;
+}
+
+.season-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40rpx;
+  height: 72rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 100ms ease-out, transform 100ms ease-out, opacity 100ms ease-out;
+}
+
+.season-arrow-left {
+  left: 10rpx;
+}
+
+.season-arrow-right {
+  right: 10rpx;
+}
+
+.season-arrow-hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  transform: translateY(-50%) scale(0.96);
+}
+
+.season-arrow-hover .arrow-text {
+  opacity: 0.85;
+}
+
+.arrow-text {
+  color: #ffffff;
+  font-size: 32rpx;
+  line-height: 1;
+  font-weight: 300;
 }
 
 /* 加载动画样式 */
@@ -75,3 +235,5 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+@import 'home-wxa-auto-dark.wxss'

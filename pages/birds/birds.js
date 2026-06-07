@@ -31,10 +31,10 @@ Page({
         });
       }, 800);
     }
-    
+
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().setData({
-        selected: 3
+        selected: 2
       });
       this.getTabBar().updateNavigationBar();
     }
@@ -44,23 +44,17 @@ Page({
       this.getTabBar().updateNavigationBar();
     }
   },
-  goToSettings() {
-    wx.navigateTo({
-      url: '/pages/settings/settings'
-    });
-  },
-
   reload() {
     // 重新设置导航栏以响应主题变化
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().updateNavigationBar();
     }
-    
+
     // 重新应用页面数据以确保样式正确更新
     this.setData({
       isLoading: true
     });
-    
+
     // 延迟一段时间以确保主题切换系统完成
     const that = this;
     setTimeout(() => {

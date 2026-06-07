@@ -5,22 +5,22 @@
 
 <view wx:else class="container">
   <view class="header">
-    <text class="title">北京雨燕</text>
+    <text class="title">鸟类图鉴</text>
   </view>
-  
+
   <view class="content">
     <view class="card">
-      <text class="card-title">物种介绍</text>
+      <text class="card-title">鸟种分类</text>
       <text class="card-desc">内容待填充</text>
     </view>
-    
+
     <view class="card">
-      <text class="card-title">生活习性</text>
+      <text class="card-title">常见鸟种</text>
       <text class="card-desc">内容待填充</text>
     </view>
-    
+
     <view class="card">
-      <text class="card-title">迁徙路线</text>
+      <text class="card-title">稀有鸟种</text>
       <text class="card-desc">内容待填充</text>
     </view>
   </view>

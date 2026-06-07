@@ -5,20 +5,20 @@
 
 <view wx:else class="container">
   <view class="header">
-    <text class="title">古建筑</text>
+    <text class="title">生态区域</text>
   </view>
-  
+
   <view class="content">
     <view class="card">
-      <text class="card-title">建筑介绍</text>
+      <text class="card-title">生态区介绍</text>
       <text class="card-desc">内容待填充</text>
     </view>
-    
+
     <view class="card">
-      <text class="card-title">雨燕栖息地</text>
+      <text class="card-title">栖息地类型</text>
       <text class="card-desc">内容待填充</text>
     </view>
-    
+
     <view class="card">
       <text class="card-title">保护措施</text>
       <text class="card-desc">内容待填充</text>

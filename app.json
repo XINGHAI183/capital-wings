@@ -1,15 +1,25 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/swift/swift",
-    "pages/architecture/architecture",
-    "pages/profile/profile"
+    "pages/ecosystem/ecosystem",
+    "pages/birds/birds",
+    "pages/profile/profile",
+    "pages/settings/settings"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "eBird",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#EBEBEB"
+    "backgroundColor": "#E0E0E0",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于显示在地图上"
+    }
   },
   "tabBar": {
     "custom": true,
@@ -23,12 +33,12 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/swift/swift",
-        "text": "北京雨燕"
+        "pagePath": "pages/ecosystem/ecosystem",
+        "text": "生态"
       },
       {
-        "pagePath": "pages/architecture/architecture",
-        "text": "古建筑"
+        "pagePath": "pages/birds/birds",
+        "text": "图鉴"
       },
       {
         "pagePath": "pages/profile/profile",
