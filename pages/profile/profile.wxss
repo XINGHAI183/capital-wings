@@ -1,6 +1,7 @@
 .container {
-  padding: 20rpx;
+  padding: 20rpx 20rpx calc(130rpx + env(safe-area-inset-bottom));
   min-height: 100vh;
+  box-sizing: border-box;
   background-color: #E0E0E0;
 }
 

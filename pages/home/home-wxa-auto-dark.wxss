@@ -39,6 +39,18 @@
         color: rgb(120, 120, 120);
     }
 
+    .season-bird-card .season-bird-title {
+        color: rgb(209, 209, 209);
+    }
+
+    .season-bird-current-name {
+        color: rgb(209, 209, 209);
+    }
+
+    .season-bird-image {
+        background-color: rgb(64, 64, 64);
+    }
+
     .loading-container {
         background-color: rgb(31, 31, 31);
     }

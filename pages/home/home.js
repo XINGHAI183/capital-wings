@@ -2,6 +2,12 @@ Page({
   data: {
     isLoading: true,
     hasLoaded: false,
+    seasonBirds: [
+      { name: '鸟类1', image: '/assets/birds/season/season-1.jpg' },
+      { name: '鸟类2', image: '/assets/birds/season/season-2.png' },
+      { name: '鸟类3', image: '/assets/birds/season/season-3.png' }
+    ],
+    currentIndex: 0,
     mapData: {
       longitude: 116.397463,
       latitude: 39.909187,
@@ -276,6 +282,20 @@ Page({
     // 点击"每日一鸟"卡片，跳转至图鉴页
     wx.switchTab({
       url: '/pages/birds/birds'
+    });
+  },
+  onPrevSeasonBird() {
+    // 切换到上一只当季常见鸟类
+    const len = this.data.seasonBirds.length;
+    this.setData({
+      currentIndex: (this.data.currentIndex - 1 + len) % len
+    });
+  },
+  onNextSeasonBird() {
+    // 切换到下一只当季常见鸟类
+    const len = this.data.seasonBirds.length;
+    this.setData({
+      currentIndex: (this.data.currentIndex + 1) % len
     });
   }
 })

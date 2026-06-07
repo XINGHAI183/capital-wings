@@ -34,9 +34,24 @@
       </view>
     </view>
     
-    <view class="card">
-      <text class="card-title">保护活动</text>
-      <text class="card-desc">内容待填充</text>
+    <view class="card season-bird-card">
+      <view class="season-bird-header">
+        <text class="card-title season-bird-title">当季常见鸟类</text>
+        <text class="season-bird-current-name">{{seasonBirds[currentIndex].name}}</text>
+      </view>
+      <view class="season-bird-image-wrapper">
+        <image
+          class="season-bird-image"
+          src="{{seasonBirds[currentIndex].image}}"
+          mode="aspectFill"
+        ></image>
+        <view class="season-arrow season-arrow-left" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onPrevSeasonBird">
+          <text class="arrow-text">‹</text>
+        </view>
+        <view class="season-arrow season-arrow-right" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onNextSeasonBird">
+          <text class="arrow-text">›</text>
+        </view>
+      </view>
     </view>
     
     <view class="card">
