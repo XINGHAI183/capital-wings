@@ -61,6 +61,63 @@
   margin-top: 20rpx;
 }
 
+/* 每日一鸟卡片 */
+.daily-bird-card {
+  /* 复用 .card 的内边距与圆角 */
+}
+
+.daily-bird-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.daily-bird-image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #E0E0E0;
+  border-radius: 12rpx;
+}
+
+.daily-bird-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.bird-name {
+  font-family: "宋体", SimSun, serif;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8rpx;
+}
+
+.bird-latin {
+  font-style: italic;
+  font-size: 26rpx;
+  color: #666666;
+  margin-bottom: 12rpx;
+}
+
+.bird-intro {
+  font-size: 26rpx;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* 加载动画样式 */
 .loading-container {
   display: flex;

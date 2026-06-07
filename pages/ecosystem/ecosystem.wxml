@@ -5,7 +5,7 @@
 
 <view wx:else class="container">
   <view class="header">
-    <text class="title">生态</text>
+    <text class="title">生态区域</text>
   </view>
 
   <view class="content">
