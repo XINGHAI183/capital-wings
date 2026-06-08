@@ -1,0 +1,19 @@
+<view class="map-page">
+  <map
+    id="beijingMapFull"
+    class="full-map"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="{{scale}}"
+    min-scale="6"
+    max-scale="18"
+    markers="{{markers}}"
+    show-location
+    enable-zoom
+    enable-scroll
+    enable-rotate
+    enable-3D
+    show-scale
+    bindmarkertap="onMarkerTap"
+  ></map>
+</view>

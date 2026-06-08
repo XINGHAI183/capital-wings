@@ -4,6 +4,7 @@
     "pages/ecosystem/ecosystem",
     "pages/birds/birds",
     "pages/profile/profile",
+    "pages/map-detail/map-detail",
     "pages/settings/settings"
   ],
   "window": {
