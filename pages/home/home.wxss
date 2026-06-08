@@ -141,13 +141,49 @@
   padding: 30rpx 30rpx 20rpx 30rpx;
 }
 
-.season-bird-current-name {
+.season-bird-link-top {
   font-size: 32rpx;
   font-weight: 300;
   color: #333333;
   text-align: right;
   flex-shrink: 0;
   margin-left: 16rpx;
+}
+
+.season-bird-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  pointer-events: none;
+}
+
+.season-bird-overlay-bottom {
+  position: absolute;
+  bottom: 24rpx;
+  left: 30rpx;
+  right: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.season-bird-name {
+  font-family: "宋体", SimSun, serif;
+  color: #ffffff;
+  font-size: 50rpx;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.season-bird-detail-link {
+  color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 300;
+  padding-bottom: 4rpx;
 }
 
 .season-bird-image-wrapper {

@@ -37,7 +37,7 @@
     <view class="card season-bird-card">
       <view class="season-bird-header">
         <text class="card-title season-bird-title">当季常见鸟类</text>
-        <text class="season-bird-current-name">{{seasonBirds[currentIndex].name}}</text>
+        <text class="season-bird-link-top">鸟类图鉴 ›</text>
       </view>
       <view class="season-bird-image-wrapper">
         <image
@@ -45,6 +45,11 @@
           src="{{seasonBirds[currentIndex].image}}"
           mode="aspectFill"
         ></image>
+        <view class="season-bird-gradient"></view>
+        <view class="season-bird-overlay-bottom">
+          <text class="season-bird-name">{{seasonBirds[currentIndex].name}}</text>
+          <text class="season-bird-detail-link">查看详情 ›</text>
+        </view>
         <view class="season-arrow season-arrow-left" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onPrevSeasonBird">
           <text class="arrow-text">‹</text>
         </view>

@@ -43,7 +43,7 @@
         color: rgb(209, 209, 209);
     }
 
-    .season-bird-current-name {
+    .season-bird-link-top {
         color: rgb(209, 209, 209);
     }
 
