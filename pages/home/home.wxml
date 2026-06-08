@@ -5,7 +5,12 @@
   
   <view class="content">
     <view class="card map-card">
-      <text class="card-title">观鸟地图</text>
+      <view class="map-card-header">
+        <text class="card-title">观鸟地图</text>
+        <view class="map-expand-btn" hover-class="map-expand-btn-hover" hover-start-time="0" hover-stay-time="120" bindtap="onMapExpandTap">
+          <text class="map-expand-icon">⛶</text>
+        </view>
+      </view>
       <view class="map-container">
         <map
           id="beijingMap"

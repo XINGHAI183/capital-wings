@@ -23,6 +23,10 @@
         color: rgb(209, 209, 209);
     }
 
+    .map-expand-btn-hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
     .image-placeholder {
         background-color: rgb(64, 64, 64);
     }
