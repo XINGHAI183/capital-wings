@@ -64,5 +64,8 @@ Page({
         isLoading: false
       });
     }, 600); // 稍长的延时以确保主题切换完成
+  },
+  onEcosystemArrowTap() {
+    // TODO: 跳转到生态区详情页
   }
 })

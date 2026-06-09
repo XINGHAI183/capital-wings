@@ -6,8 +6,8 @@ Page({
     hasLoaded: false,
     seasonBirds: [
       { name: '鸟类1', image: '/assets/birds/season/season-1.jpg' },
-      { name: '鸟类2', image: '/assets/birds/season/season-2.png' },
-      { name: '鸟类3', image: '/assets/birds/season/season-3.png' }
+      { name: '鸟类2', image: '/assets/birds/season/season-2.jpg' },
+      { name: '鸟类3', image: '/assets/birds/season/season-3.jpg' }
     ],
     currentIndex: 0,
     mapData: {
