@@ -261,10 +261,12 @@
 }
 
 .arrow-text {
+  display: block;
   color: #ffffff;
   font-size: 32rpx;
-  line-height: 1;
   font-weight: 300;
+  line-height: 1;
+  margin: -2rpx 0 0 2rpx;
 }
 
 /* 加载动画样式 */
