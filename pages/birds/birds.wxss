@@ -42,6 +42,84 @@
   color: #999999;
 }
 
+/* 鸟类卡片 —— 行布局：左侧窄高图片，右侧文本 */
+.bd-card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: -10rpx;
+}
+
+.bd-image {
+  width: 180rpx;
+  height: 250rpx;
+  border-radius: 12rpx;
+  background-color: #E0E0E0;
+  flex-shrink: 0;
+}
+
+.bd-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+
+.bd-info-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.bd-name {
+  font-family: "宋体", SimSun, serif;
+  font-size: 50rpx;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #4A4E63;
+}
+
+.bd-sci {
+  font-style: italic;
+  font-size: 28rpx;
+  line-height: 1.2;
+  color: #999999;
+  margin-top: -6rpx;
+}
+
+.bd-features {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.bd-feature {
+  font-size: 24rpx;
+  line-height: 1.4;
+  color: #888888;
+}
+
+.bd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.bd-tag {
+  height: 50rpx;
+  padding: 0 26rpx;
+  border-radius: 25rpx;
+  background-color: rgba(74, 78, 99, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bd-tag-text {
+  font-size: 28rpx;
+  color: #4A4E63;
+}
+
 /* 加载动画样式 */
 .loading-container {
   display: flex;

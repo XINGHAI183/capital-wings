@@ -10,18 +10,23 @@
 
   <view class="content">
     <view class="card">
-      <text class="card-title">鸟种分类</text>
-      <text class="card-desc">内容待填充</text>
-    </view>
-
-    <view class="card">
-      <text class="card-title">常见鸟种</text>
-      <text class="card-desc">内容待填充</text>
-    </view>
-
-    <view class="card">
-      <text class="card-title">稀有鸟种</text>
-      <text class="card-desc">内容待填充</text>
+      <view class="bd-card-row">
+        <view class="bd-image"></view>
+        <view class="bd-info">
+          <view class="bd-info-top">
+            <text class="bd-name">鸟类1</text>
+            <text class="bd-sci">xueming</text>
+          </view>
+          <view class="bd-features">
+            <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+            <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+          </view>
+          <view class="bd-tags">
+            <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
+            <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
 </view>
