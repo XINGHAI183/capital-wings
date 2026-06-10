@@ -35,11 +35,92 @@
     <block wx:if="{{filterMode === 'pinyin'}}">
       <view class="card">
         <view class="bd-card-row">
-          <view class="bd-image"></view>
+          <view class="bd-image">
+            <image
+              class="bd-image-img"
+              src="/assets/birds/guide/baitoubei.jpg"
+              mode="aspectFill"
+            />
+          </view>
           <view class="bd-info">
             <view class="bd-info-top">
-              <text class="bd-name">鸟类1</text>
-              <text class="bd-sci">xueming</text>
+              <text class="bd-name">白头鹎</text>
+              <text class="bd-sci">Pycnonotus sinensis</text>
+            </view>
+            <view class="bd-features">
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+            </view>
+            <view class="bd-tags">
+              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
+              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="card">
+        <view class="bd-card-row">
+          <view class="bd-image">
+            <image
+              class="bd-image-img"
+              src="/assets/birds/guide/damajian.jpg"
+              mode="aspectFill"
+            />
+          </view>
+          <view class="bd-info">
+            <view class="bd-info-top">
+              <text class="bd-name">大麻鳽</text>
+              <text class="bd-sci">Botaurus stellaris</text>
+            </view>
+            <view class="bd-features">
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+            </view>
+            <view class="bd-tags">
+              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
+              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="card">
+        <view class="bd-card-row">
+          <view class="bd-image">
+            <image
+              class="bd-image-img"
+              src="/assets/birds/guide/jiaoliao.jpg"
+              mode="aspectFill"
+            />
+          </view>
+          <view class="bd-info">
+            <view class="bd-info-top">
+              <text class="bd-name">鹪鹩</text>
+              <text class="bd-sci">Troglodytes troglodytes</text>
+            </view>
+            <view class="bd-features">
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+            </view>
+            <view class="bd-tags">
+              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
+              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="card">
+        <view class="bd-card-row">
+          <view class="bd-image">
+            <image
+              class="bd-image-img"
+              src="/assets/birds/guide/sandaomeicaowu.jpg"
+              mode="aspectFill"
+            />
+          </view>
+          <view class="bd-info">
+            <view class="bd-info-top">
+              <text class="bd-name">三道眉草鹀</text>
+              <text class="bd-sci">Emberiza cioides</text>
             </view>
             <view class="bd-features">
               <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
@@ -65,7 +146,7 @@
           />
           <view class="ec-cover-gradient" />
           <view class="ec-cover-title-wrapper">
-            <text class="ec-cover-title">生态区1</text>
+            <text class="ec-cover-title">玉渊潭</text>
           </view>
           <view
             class="ec-cover-arrow"
@@ -80,10 +161,16 @@
 
         <view class="ec-tags">
           <view class="ec-tag">
-            <text class="ec-tag-text">鸟类1</text>
+            <text class="ec-tag-text">戴胜</text>
           </view>
           <view class="ec-tag">
-            <text class="ec-tag-text">鸟类2</text>
+            <text class="ec-tag-text">大斑啄木鸟</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">灰喜鹊</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">珠颈斑鸠</text>
           </view>
         </view>
 

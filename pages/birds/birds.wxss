@@ -2,7 +2,7 @@
   padding: 20rpx 20rpx calc(130rpx + env(safe-area-inset-bottom));
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: #E0E0E0;
+  background: linear-gradient(180deg, #F1F8E9 0%, #DCEDC8 100%);
 }
 
 .header {
@@ -96,6 +96,13 @@
   border-radius: 12rpx;
   background-color: #E0E0E0;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.bd-image-img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .bd-info {

@@ -36,7 +36,9 @@ capital-wings/
 ├── data/                     # 数据层
 │   └── spots/                # 观鸟点位数据（含 markers 转换函数）
 ├── assets/                   # 静态图片资源
-│   ├── birds/season/         # 当季常见鸟类轮播图片（建议使用 JPG）
+│   ├── birds/
+│   │   ├── season/           # 当季常见鸟类轮播图片（建议使用 JPG）
+│   │   └── guide/            # 图鉴鸟类图片（建议使用 JPG）
 │   └── ecosystems/           # 生态区封面图（建议使用 JPG）
 ├── custom-tab-bar/           # 自定义 TabBar 组件
 ├── app.js                    # 小程序入口
