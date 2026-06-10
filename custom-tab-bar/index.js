@@ -28,7 +28,7 @@ Component({
       const url = data.path;
       wx.switchTab({ url });
     },
-    updateNavigationBar(title = 'capital-wings') {
+    updateNavigationBar(title = '首都羽翼') {
       // 获取系统主题信息
       const systemInfo = wx.getSystemInfoSync();
       const isDarkMode = systemInfo.theme === 'dark';
