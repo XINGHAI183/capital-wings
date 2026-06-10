@@ -62,19 +62,29 @@
             class="ec-cover-image"
             src="/assets/ecosystems/yuyuantan.jpg"
             mode="aspectFill"
-          ></image>
-          <view class="ec-cover-gradient"></view>
+          />
+          <view class="ec-cover-gradient" />
           <view class="ec-cover-title-wrapper">
             <text class="ec-cover-title">生态区1</text>
           </view>
-          <view class="ec-cover-arrow" hover-class="ec-cover-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onEcosystemArrowTap">
+          <view
+            class="ec-cover-arrow"
+            hover-class="ec-cover-arrow-hover"
+            hover-stay-time="120"
+            hover-start-time="0"
+            bindtap="onEcosystemArrowTap"
+          >
             <text class="ec-cover-arrow-text">›</text>
           </view>
         </view>
 
         <view class="ec-tags">
-          <view class="ec-tag"><text class="ec-tag-text">标签1</text></view>
-          <view class="ec-tag"><text class="ec-tag-text">标签2</text></view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">鸟类1</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">鸟类2</text>
+          </view>
         </view>
 
         <view class="ec-location">
