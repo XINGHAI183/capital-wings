@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/ecosystem/ecosystem",
     "pages/birds/birds",
     "pages/profile/profile",
     "pages/map-detail/map-detail",
@@ -32,10 +31,6 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/ecosystem/ecosystem",
-        "text": "生态"
       },
       {
         "pagePath": "pages/birds/birds",

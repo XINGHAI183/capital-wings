@@ -19,6 +19,51 @@
         color: rgb(99, 99, 99);
     }
 
+    .filter-item {
+        background-color: rgb(17, 17, 17);
+        box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.4);
+    }
+
+    .filter-item-hover {
+        background-color: rgba(171, 175, 199, 0.08);
+    }
+
+    .filter-item-active {
+        background-color: rgb(171, 175, 199);
+    }
+
+    .filter-item-text {
+        color: rgb(171, 175, 199);
+    }
+
+    .filter-item-active .filter-item-text {
+        color: rgb(17, 17, 17);
+    }
+
+    .ec-cover {
+        background-color: rgb(64, 64, 64);
+    }
+
+    .ec-cover-title {
+        color: rgb(255, 255, 255);
+    }
+
+    .ec-tag {
+        background-color: rgba(171, 175, 199, 0.15);
+    }
+
+    .ec-tag-text {
+        color: rgb(171, 175, 199);
+    }
+
+    .ec-location-icon {
+        color: rgb(171, 175, 199);
+    }
+
+    .ec-location-text {
+        color: rgb(171, 175, 199);
+    }
+
     .loading-container {
         background-color: rgb(31, 31, 31);
     }

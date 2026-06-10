@@ -9,10 +9,6 @@ Component({
         text: '首页'
       },
       {
-        pagePath: '/pages/ecosystem/ecosystem',
-        text: '生态'
-      },
-      {
         pagePath: '/pages/birds/birds',
         text: '图鉴'
       },

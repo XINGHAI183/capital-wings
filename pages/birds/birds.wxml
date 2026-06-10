@@ -9,24 +9,79 @@
   </view>
 
   <view class="content">
-    <view class="card">
-      <view class="bd-card-row">
-        <view class="bd-image"></view>
-        <view class="bd-info">
-          <view class="bd-info-top">
-            <text class="bd-name">鸟类1</text>
-            <text class="bd-sci">xueming</text>
-          </view>
-          <view class="bd-features">
-            <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-            <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-          </view>
-          <view class="bd-tags">
-            <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
-            <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+    <view class="filter-bar">
+      <view
+        class="filter-item {{filterMode === 'pinyin' ? 'filter-item-active' : ''}}"
+        hover-class="filter-item-hover"
+        hover-stay-time="120"
+        hover-start-time="0"
+        bindtap="onFilterTap"
+        data-mode="pinyin"
+      >
+        <text class="filter-item-text">按拼音</text>
+      </view>
+      <view
+        class="filter-item {{filterMode === 'ecosystem' ? 'filter-item-active' : ''}}"
+        hover-class="filter-item-hover"
+        hover-stay-time="120"
+        hover-start-time="0"
+        bindtap="onFilterTap"
+        data-mode="ecosystem"
+      >
+        <text class="filter-item-text">按生态区</text>
+      </view>
+    </view>
+    <!-- 按拼音：鸟类卡片列表 -->
+    <block wx:if="{{filterMode === 'pinyin'}}">
+      <view class="card">
+        <view class="bd-card-row">
+          <view class="bd-image"></view>
+          <view class="bd-info">
+            <view class="bd-info-top">
+              <text class="bd-name">鸟类1</text>
+              <text class="bd-sci">xueming</text>
+            </view>
+            <view class="bd-features">
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+            </view>
+            <view class="bd-tags">
+              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
+              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+            </view>
           </view>
         </view>
       </view>
-    </view>
+    </block>
+
+    <!-- 按生态区：生态区卡片列表 -->
+    <block wx:if="{{filterMode === 'ecosystem'}}">
+      <view class="card">
+        <view class="ec-cover">
+          <image
+            class="ec-cover-image"
+            src="/assets/ecosystems/yuyuantan.jpg"
+            mode="aspectFill"
+          ></image>
+          <view class="ec-cover-gradient"></view>
+          <view class="ec-cover-title-wrapper">
+            <text class="ec-cover-title">生态区1</text>
+          </view>
+          <view class="ec-cover-arrow" hover-class="ec-cover-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onEcosystemArrowTap">
+            <text class="ec-cover-arrow-text">›</text>
+          </view>
+        </view>
+
+        <view class="ec-tags">
+          <view class="ec-tag"><text class="ec-tag-text">标签1</text></view>
+          <view class="ec-tag"><text class="ec-tag-text">标签2</text></view>
+        </view>
+
+        <view class="ec-location">
+          <text class="ec-location-icon">📍</text>
+          <text class="ec-location-text">北京市 XX区</text>
+        </view>
+      </view>
+    </block>
   </view>
 </view>

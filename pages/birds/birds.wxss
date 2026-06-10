@@ -16,6 +16,46 @@
   color: #4A4E63;
 }
 
+/* 筛选切换条 */
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 16rpx;
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.filter-item {
+  flex: 1;
+  height: 72rpx;
+  border-radius: 16rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  transition: background-color 120ms ease-out, transform 120ms ease-out;
+}
+
+.filter-item-hover {
+  transform: scale(0.98);
+  background-color: rgba(74, 78, 99, 0.06);
+}
+
+.filter-item-active {
+  background-color: #4A4E63;
+}
+
+.filter-item-text {
+  font-size: 28rpx;
+  color: #4A4E63;
+  font-weight: 500;
+}
+
+.filter-item-active .filter-item-text {
+  color: #ffffff;
+}
+
 .content {
   padding: 20rpx 0;
 }
@@ -117,6 +157,127 @@
 
 .bd-tag-text {
   font-size: 28rpx;
+  color: #4A4E63;
+}
+
+/* 生态区卡片 —— 封面图区域 */
+.ec-cover {
+  position: relative;
+  margin: -10rpx -10rpx 24rpx -10rpx;
+  height: 360rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background-color: #E0E0E0;
+}
+
+.ec-cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ec-cover-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  pointer-events: none;
+}
+
+.ec-cover-title-wrapper {
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 24rpx;
+  z-index: 2;
+}
+
+.ec-cover-title {
+  font-family: "宋体", SimSun, serif;
+  font-size: 50rpx;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.ec-cover-arrow {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: background-color 100ms ease-out, transform 100ms ease-out, opacity 100ms ease-out;
+}
+
+.ec-cover-arrow-hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  transform: scale(0.96);
+}
+
+.ec-cover-arrow-hover .ec-cover-arrow-text {
+  opacity: 0.85;
+}
+
+.ec-cover-arrow-text {
+  display: block;
+  color: #ffffff;
+  font-size: 32rpx;
+  font-weight: 300;
+  line-height: 1;
+  margin: -2rpx 0 0 4rpx;
+}
+
+/* 生态区标签行 */
+.ec-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  margin-bottom: 20rpx;
+}
+
+.ec-tag {
+  height: 50rpx;
+  padding: 0 26rpx;
+  border-radius: 25rpx;
+  background-color: rgba(74, 78, 99, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ec-tag-text {
+  font-size: 28rpx;
+  color: #4A4E63;
+}
+
+/* 行政区域 */
+.ec-location {
+  display: flex;
+  align-items: center;
+}
+
+.ec-location-icon {
+  font-size: 28rpx;
+  color: #4A4E63;
+  margin-right: 8rpx;
+  line-height: 1;
+}
+
+.ec-location-text {
+  font-size: 26rpx;
   color: #4A4E63;
 }
 

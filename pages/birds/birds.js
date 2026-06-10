@@ -1,7 +1,8 @@
 Page({
   data: {
     isLoading: true,
-    hasLoaded: false
+    hasLoaded: false,
+    filterMode: 'pinyin'
   },
   onLoad() {
     // 如果是首次加载，显示加载动画
@@ -34,7 +35,7 @@ Page({
 
     if (typeof this.getTabBar === 'function' && this.getTabBar()) {
       this.getTabBar().setData({
-        selected: 2
+        selected: 1
       });
       this.getTabBar().updateNavigationBar();
     }
@@ -64,5 +65,16 @@ Page({
         isLoading: false
       });
     }, 600); // 稍长的延时以确保主题切换完成
+  },
+  onFilterTap(e) {
+    const mode = e.currentTarget.dataset.mode;
+    if (mode && mode !== this.data.filterMode) {
+      this.setData({
+        filterMode: mode
+      });
+    }
+  },
+  onEcosystemArrowTap() {
+    // TODO: 跳转到生态区详情页
   }
 })
