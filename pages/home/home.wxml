@@ -65,8 +65,13 @@
     </view>
     
     <view class="card">
-      <text class="card-title">志愿者招募</text>
-      <text class="card-desc">内容待填充</text>
+      <text class="card-title">观鸟记录</text>
+      <text class="card-desc">记录你的观鸟足迹</text>
+    </view>
+
+    <view class="card">
+      <text class="card-title">AI识鸟</text>
+      <text class="card-desc">拍照识别鸟类</text>
     </view>
   </view>
 </view>
