@@ -169,8 +169,83 @@
           <view class="ec-tag">
             <text class="ec-tag-text">灰喜鹊</text>
           </view>
+        </view>
+
+        <view class="ec-location">
+          <text class="ec-location-icon">📍</text>
+          <text class="ec-location-text">北京市 XX区</text>
+        </view>
+      </view>
+      <view class="card">
+        <view class="ec-cover">
+          <image
+            class="ec-cover-image"
+            src="/assets/ecosystems/nanyuan.jpg"
+            mode="aspectFill"
+          />
+          <view class="ec-cover-gradient" />
+          <view class="ec-cover-title-wrapper">
+            <text class="ec-cover-title">南苑</text>
+          </view>
+          <view
+            class="ec-cover-arrow"
+            hover-class="ec-cover-arrow-hover"
+            hover-stay-time="120"
+            hover-start-time="0"
+            bindtap="onEcosystemArrowTap"
+          >
+            <text class="ec-cover-arrow-text">›</text>
+          </view>
+        </view>
+
+        <view class="ec-tags">
           <view class="ec-tag">
-            <text class="ec-tag-text">珠颈斑鸠</text>
+            <text class="ec-tag-text">雀鹰</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">红隼</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">大鵟</text>
+          </view>
+        </view>
+
+        <view class="ec-location">
+          <text class="ec-location-icon">📍</text>
+          <text class="ec-location-text">北京市 XX区</text>
+        </view>
+      </view>
+      <view class="card">
+        <view class="ec-cover">
+          <image
+            class="ec-cover-image"
+            src="/assets/ecosystems/aosen.jpg"
+            mode="aspectFill"
+          />
+          <view class="ec-cover-gradient" />
+          <view class="ec-cover-title-wrapper">
+            <text class="ec-cover-title">奥森</text>
+          </view>
+          <view
+            class="ec-cover-arrow"
+            hover-class="ec-cover-arrow-hover"
+            hover-stay-time="120"
+            hover-start-time="0"
+            bindtap="onEcosystemArrowTap"
+          >
+            <text class="ec-cover-arrow-text">›</text>
+          </view>
+        </view>
+
+        <view class="ec-tags">
+          <view class="ec-tag">
+            <text class="ec-tag-text">星头啄木鸟</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">牛头伯劳</text>
+          </view>
+          <view class="ec-tag">
+            <text class="ec-tag-text">红嘴蓝鹊</text>
           </view>
         </view>
 
