@@ -92,7 +92,7 @@
   margin-top: 20rpx;
 }
 
-/* 每日一鸟卡片 */
+/* 为你推荐卡片 */
 .daily-bird-card {
   /* 复用 .card 的内边距与圆角 */
 }

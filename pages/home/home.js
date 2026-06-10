@@ -80,7 +80,7 @@ Page({
     }, 600); // 稍长的延时以确保主题切换完成
   },
   onDailyBirdTap() {
-    // 点击"每日一鸟"卡片，跳转至图鉴页
+    // 点击"为你推荐"卡片，跳转至图鉴页
     wx.switchTab({
       url: '/pages/birds/birds'
     });
