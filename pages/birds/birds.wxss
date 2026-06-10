@@ -84,7 +84,7 @@
   font-size: 28rpx;
   line-height: 1.2;
   color: #999999;
-  margin-top: -6rpx;
+  margin-top: 2rpx;
 }
 
 .bd-features {
