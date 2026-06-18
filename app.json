@@ -10,7 +10,7 @@
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "首都羽翼",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#E0E0E0",
+    "backgroundColor": "#F1F8E9",
     "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
   },
@@ -24,7 +24,7 @@
   "tabBar": {
     "custom": true,
     "color": "#555555",
-    "selectedColor": "#4A4E63",
+    "selectedColor": "#1B3D2B",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [

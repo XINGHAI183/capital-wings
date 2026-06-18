@@ -4,7 +4,7 @@
     }
 
     .title {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     .section {
@@ -25,11 +25,11 @@
 
     .loading-spinner {
         border: 6rpx solid rgb(64, 64, 64);
-        border-top: 6rpx solid rgb(171, 175, 199);
+        border-top: 6rpx solid rgb(127, 178, 133);
     }
 
     .loading-text {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     @keyframes spin {

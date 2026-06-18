@@ -13,7 +13,7 @@
 .title {
   font-size: 48rpx;
   font-weight: bold;
-  color: #4A4E63;
+  color: #1B3D2B;
 }
 
 /* 筛选切换条 */
@@ -39,21 +39,17 @@
 
 .filter-item-hover {
   transform: scale(0.98);
-  background-color: rgba(74, 78, 99, 0.06);
+  background-color: rgba(27, 61, 43, 0.06);
 }
 
 .filter-item-active {
-  background-color: #4A4E63;
+  background-color: rgba(27, 61, 43, 0.12);
 }
 
 .filter-item-text {
   font-size: 28rpx;
-  color: #4A4E63;
+  color: #1B3D2B;
   font-weight: 500;
-}
-
-.filter-item-active .filter-item-text {
-  color: #ffffff;
 }
 
 .content {
@@ -123,7 +119,7 @@
   font-size: 45rpx;
   font-weight: 600;
   line-height: 1.2;
-  color: #4A4E63;
+  color: #1B3D2B;
 }
 
 .bd-sci {
@@ -156,7 +152,7 @@
   height: 50rpx;
   padding: 0 26rpx;
   border-radius: 25rpx;
-  background-color: rgba(74, 78, 99, 0.12);
+  background-color: rgba(27, 61, 43, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,7 +160,7 @@
 
 .bd-tag-text {
   font-size: 28rpx;
-  color: #4A4E63;
+  color: #1B3D2B;
 }
 
 /* 生态区卡片 —— 封面图区域 */
@@ -259,7 +255,7 @@
   height: 50rpx;
   padding: 0 26rpx;
   border-radius: 25rpx;
-  background-color: rgba(74, 78, 99, 0.12);
+  background-color: rgba(27, 61, 43, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,7 +263,7 @@
 
 .ec-tag-text {
   font-size: 28rpx;
-  color: #4A4E63;
+  color: #1B3D2B;
 }
 
 /* 行政区域 */
@@ -278,14 +274,14 @@
 
 .ec-location-icon {
   font-size: 28rpx;
-  color: #4A4E63;
+  color: #1B3D2B;
   margin-right: 8rpx;
   line-height: 1;
 }
 
 .ec-location-text {
   font-size: 26rpx;
-  color: #4A4E63;
+  color: #1B3D2B;
 }
 
 /* 加载动画样式 */
@@ -299,15 +295,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #EBEBEB;
+  background: linear-gradient(180deg, #F1F8E9 0%, #DCEDC8 100%);
   z-index: 10000;
 }
 
 .loading-spinner {
   width: 80rpx;
   height: 80rpx;
-  border: 6rpx solid #E0E0E0;
-  border-top: 6rpx solid #4A4E63;
+  border: 6rpx solid rgba(27, 61, 43, 0.12);
+  border-top: 6rpx solid #1B3D2B;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -315,7 +311,7 @@
 .loading-text {
   margin-top: 30rpx;
   font-size: 28rpx;
-  color: #4A4E63;
+  color: #1B3D2B;
 }
 
 @keyframes spin {

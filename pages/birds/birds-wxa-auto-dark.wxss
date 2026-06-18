@@ -4,7 +4,7 @@
     }
 
     .title {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     .card {
@@ -19,25 +19,33 @@
         color: rgb(99, 99, 99);
     }
 
+    .bd-name {
+        color: rgb(127, 178, 133);
+    }
+
+    .bd-tag {
+        background-color: rgba(127, 178, 133, 0.08);
+    }
+
+    .bd-tag-text {
+        color: rgb(127, 178, 133);
+    }
+
     .filter-item {
         background-color: rgb(17, 17, 17);
         box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.4);
     }
 
     .filter-item-hover {
-        background-color: rgba(171, 175, 199, 0.08);
+        background-color: rgba(127, 178, 133, 0.08);
     }
 
     .filter-item-active {
-        background-color: rgb(171, 175, 199);
+        background-color: rgba(127, 178, 133, 0.15);
     }
 
     .filter-item-text {
-        color: rgb(171, 175, 199);
-    }
-
-    .filter-item-active .filter-item-text {
-        color: rgb(17, 17, 17);
+        color: rgb(127, 178, 133);
     }
 
     .ec-cover {
@@ -49,19 +57,19 @@
     }
 
     .ec-tag {
-        background-color: rgba(171, 175, 199, 0.15);
+        background-color: rgba(127, 178, 133, 0.08);
     }
 
     .ec-tag-text {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     .ec-location-icon {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     .ec-location-text {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     .loading-container {
@@ -74,11 +82,11 @@
 
     .loading-spinner {
         border: 6rpx solid rgb(64, 64, 64);
-        border-top: 6rpx solid rgb(171, 175, 199);
+        border-top: 6rpx solid rgb(127, 178, 133);
     }
 
     .loading-text {
-        color: rgb(171, 175, 199);
+        color: rgb(127, 178, 133);
     }
 
     @keyframes spin {
