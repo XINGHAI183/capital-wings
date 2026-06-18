@@ -10,6 +10,11 @@ Page({
       { name: '鸟类3', image: '/assets/birds/season/season-3.jpg' }
     ],
     currentIndex: 0,
+    momentsBirds: [
+      { name: '北京雨燕', image: '/assets/birds/moments/beijingyuyan.jpg' },
+      { name: '苍鹭', image: '/assets/birds/moments/canglu.jpg' }
+    ],
+    momentsIndex: 0,
     mapData: {
       longitude: 116.397463,
       latitude: 39.909187,
@@ -79,12 +84,6 @@ Page({
       });
     }, 600); // 稍长的延时以确保主题切换完成
   },
-  onDailyBirdTap() {
-    // 点击"为你推荐"卡片，跳转至图鉴页
-    wx.switchTab({
-      url: '/pages/birds/birds'
-    });
-  },
   onPrevSeasonBird() {
     // 切换到上一只当季常见鸟类
     const len = this.data.seasonBirds.length;
@@ -97,6 +96,20 @@ Page({
     const len = this.data.seasonBirds.length;
     this.setData({
       currentIndex: (this.data.currentIndex + 1) % len
+    });
+  },
+  onPrevMomentBird() {
+    // 切换到上一张精彩瞬间
+    const len = this.data.momentsBirds.length;
+    this.setData({
+      momentsIndex: (this.data.momentsIndex - 1 + len) % len
+    });
+  },
+  onNextMomentBird() {
+    // 切换到下一张精彩瞬间
+    const len = this.data.momentsBirds.length;
+    this.setData({
+      momentsIndex: (this.data.momentsIndex + 1) % len
     });
   },
 

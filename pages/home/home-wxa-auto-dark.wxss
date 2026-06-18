@@ -31,18 +31,6 @@
         background-color: rgb(64, 64, 64);
     }
 
-    .bird-name {
-        color: rgb(209, 209, 209);
-    }
-
-    .bird-latin {
-        color: rgb(150, 150, 150);
-    }
-
-    .bird-intro {
-        color: rgb(120, 120, 120);
-    }
-
     .season-bird-card .season-bird-title {
         color: rgb(209, 209, 209);
     }
