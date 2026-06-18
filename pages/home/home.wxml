@@ -27,14 +27,29 @@
     
     <view class="card daily-bird-card" bindtap="onDailyBirdTap">
       <text class="card-title">为你推荐</text>
-      <view class="daily-bird-content">
-        <view class="daily-bird-image">
-          <view class="image-placeholder"></view>
-        </view>
-        <view class="daily-bird-info">
-          <text class="bird-name">名称</text>
-          <text class="bird-latin">xueming</text>
-          <text class="bird-intro">鸟类介绍…</text>
+      <view class="daily-bird-inner">
+        <view class="bd-card-row">
+          <view class="bd-image">
+            <image
+              class="bd-image-img"
+              src="/assets/birds/guide/baitoubei.jpg"
+              mode="aspectFill"
+            />
+          </view>
+          <view class="bd-info">
+            <view class="bd-info-top">
+              <text class="bd-name">白头鹎</text>
+              <text class="bd-sci">Pycnonotus sinensis</text>
+            </view>
+            <view class="bd-features">
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+            </view>
+            <view class="bd-tags">
+              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
+              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+            </view>
+          </view>
         </view>
       </view>
     </view>

@@ -27,20 +27,28 @@
         background-color: rgba(255, 255, 255, 0.08);
     }
 
-    .image-placeholder {
-        background-color: rgb(64, 64, 64);
+    .daily-bird-inner {
+        background-color: rgba(127, 178, 133, 0.08);
     }
 
-    .bird-name {
-        color: rgb(209, 209, 209);
+    .daily-bird-card .bd-name {
+        color: rgb(127, 178, 133);
     }
 
-    .bird-latin {
+    .daily-bird-card .bd-sci {
         color: rgb(150, 150, 150);
     }
 
-    .bird-intro {
+    .daily-bird-card .bd-feature {
         color: rgb(120, 120, 120);
+    }
+
+    .daily-bird-card .bd-tag {
+        background-color: rgba(127, 178, 133, 0.08);
+    }
+
+    .daily-bird-card .bd-tag-text {
+        color: rgb(127, 178, 133);
     }
 
     .season-bird-card .season-bird-title {
