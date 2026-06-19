@@ -28,7 +28,7 @@
     }
 
     .daily-bird-inner {
-        background-color: rgba(127, 178, 133, 0.08);
+        background-color: rgba(127, 178, 133, 0.04);
     }
 
     .daily-bird-card .bd-name {

@@ -93,7 +93,7 @@
 }
 
 .daily-bird-inner {
-  background-color: #F1F8E9;
+  background-color: #F4F9ED;
   border-radius: 12rpx;
   padding: 20rpx;
 }

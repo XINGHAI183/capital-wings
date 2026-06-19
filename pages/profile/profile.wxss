@@ -50,10 +50,11 @@
 .card-arrow::after {
   content: "›";
   position: absolute;
-  right: 60rpx;
-  top: 45%;
+  right: 33rpx;
+  top: 44%;
   transform: translateY(-50%);
   font-size: 48rpx;
+  font-weight: 150;
   color: #999999;
   line-height: 1;
 }

@@ -237,10 +237,10 @@
 .ec-cover-arrow-text {
   display: block;
   color: #ffffff;
-  font-size: 32rpx;
-  font-weight: 300;
+  font-size: 40rpx;
+  font-weight: 100;
   line-height: 1;
-  margin: -2rpx 0 0 4rpx;
+  margin: -8rpx 0 0 2rpx;
 }
 
 /* 生态区标签行 */
