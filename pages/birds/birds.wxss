@@ -79,94 +79,14 @@
 }
 
 /* 鸟类卡片 —— 行布局：左侧窄高图片，右侧文本 */
-.bd-card-row {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
+/* 通用 .bd-* 样式已抽到 app.wxss，此处仅保留页面级覆盖 */
+
+.card > .bd-card-row {
   margin: -10rpx;
 }
 
-.bd-image {
-  width: 180rpx;
-  height: 250rpx;
-  border-radius: 12rpx;
-  background-color: #E0E0E0;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.bd-image-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.bd-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 20rpx;
-}
-
-.bd-info-top {
-  display: flex;
-  flex-direction: column;
-}
-
-.bd-name {
-  font-family: "宋体", SimSun, serif;
-  font-size: 45rpx;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #1B3D2B;
-}
-
-.bd-sci {
-  font-style: italic;
-  font-size: 25rpx;
-  line-height: 1.2;
-  color: #999999;
-  margin-top: 2rpx;
-}
-
-.bd-features {
-  display: flex;
-  flex-direction: column;
-  gap: 6rpx;
-  margin: 8rpx 0;
-}
-
-.bd-feature {
-  font-size: 24rpx;
-  line-height: 1.4;
-  color: #888888;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.bd-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12rpx;
-}
-
-.bd-tag {
-  height: 50rpx;
-  padding: 0 26rpx;
-  border-radius: 25rpx;
-  background-color: rgba(27, 61, 43, 0.06);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bd-tag-text {
-  font-size: 28rpx;
-  color: #1B3D2B;
+.detail-bird-inner .bd-card-row {
+  margin: 0;
 }
 
 /* 生态区卡片 —— 封面图区域 */
@@ -402,38 +322,72 @@
 }
 
 .detail-modal-close {
-  width: 56rpx;
-  height: 56rpx;
+  width: 48rpx;
+  height: 48rpx;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8rpx;
+  flex-shrink: 0;
+  background-color: transparent;
+  transition: background-color 120ms ease-out;
+}
+
+.detail-modal-close-hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .detail-modal-close-text {
-  font-size: 48rpx;
+  font-size: 40rpx;
   line-height: 1;
-  color: #666666;
+  color: #999999;
 }
 
 .detail-modal-body {
   flex: 1;
   padding: 30rpx;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.detail-bird-card {
-  width: 100%;
-}
-
-.detail-bird-inner {
+.detail-inner-card {
   background-color: #F4F9ED;
   border-radius: 12rpx;
   padding: 20rpx;
+  margin-bottom: 20rpx;
 }
 
-.detail-bird-inner .bd-card-row {
-  margin: 0;
+.detail-inner-card-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 16rpx;
+}
+
+.detail-gallery {
+  width: 100%;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.detail-gallery-cover {
+  width: 100%;
+  height: 400rpx;
+  display: block;
+  background-color: #E0E0E0;
+}
+
+.detail-intro-features {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.detail-intro-feature {
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #666666;
 }
 
 @import 'birds-wxa-auto-dark.wxss'

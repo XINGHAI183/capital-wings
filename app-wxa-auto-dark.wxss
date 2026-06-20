@@ -1,5 +1,26 @@
 @media (prefers-color-scheme: dark) {
     page {
-        background-color: rgb(42, 42, 42); /* 对应 #2a2a2a */
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
+        background-attachment: fixed;
+    }
+
+    .bd-name {
+        color: #C8E8CA;
+    }
+
+    .bd-sci {
+        color: rgb(209, 209, 209);
+    }
+
+    .bd-feature {
+        color: rgb(209, 209, 209);
+    }
+
+    .bd-tag {
+        background-color: rgba(200, 232, 202, 0.12);
+    }
+
+    .bd-tag-text {
+        color: #C8E8CA;
     }
 }

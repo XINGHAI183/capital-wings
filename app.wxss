@@ -8,4 +8,94 @@ page {
   padding: 20rpx;
 }
 
+/* 鸟类卡片通用样式：首页“为你推荐”与图鉴页共享 */
+.bd-card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.bd-image {
+  width: 180rpx;
+  height: 250rpx;
+  border-radius: 12rpx;
+  background-color: #E0E0E0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.bd-image-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bd-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+
+.bd-info-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.bd-name {
+  font-family: "宋体", SimSun, serif;
+  font-size: 45rpx;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1B3D2B;
+}
+
+.bd-sci {
+  font-style: italic;
+  font-size: 25rpx;
+  line-height: 1.2;
+  color: #999999;
+  margin-top: 2rpx;
+}
+
+.bd-features {
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  margin: 8rpx 0;
+}
+
+.bd-feature {
+  font-size: 24rpx;
+  line-height: 1.4;
+  color: #888888;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.bd-tag {
+  height: 50rpx;
+  padding: 0 26rpx;
+  border-radius: 25rpx;
+  background-color: rgba(27, 61, 43, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bd-tag-text {
+  font-size: 28rpx;
+  color: #1B3D2B;
+}
+
 @import 'app-wxa-auto-dark.wxss'

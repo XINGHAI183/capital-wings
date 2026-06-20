@@ -191,35 +191,28 @@
     <view class="detail-modal-mask" />
     <view class="detail-modal-content" catchtap="onModalContentTap">
       <view class="detail-modal-header">
-        <text class="detail-modal-title">图鉴详情</text>
-        <view class="detail-modal-close" catchtap="onCloseDetail">
+        <text class="detail-modal-title">{{birdList[selectedBirdIndex].name}}</text>
+        <view class="detail-modal-close" catchtap="onCloseDetail" hover-class="detail-modal-close-hover" hover-stay-time="100">
           <text class="detail-modal-close-text">×</text>
         </view>
       </view>
-      <view class="detail-modal-body">
-        <view class="detail-bird-card" wx:if="{{birdList[selectedBirdIndex]}}">
-          <view class="detail-bird-inner">
-            <view class="bd-card-row">
-              <view class="bd-image">
-                <image
-                  class="bd-image-img"
-                  src="{{birdList[selectedBirdIndex].image}}"
-                  mode="aspectFill"
-                />
-              </view>
-              <view class="bd-info">
-                <view class="bd-info-top">
-                  <text class="bd-name">{{birdList[selectedBirdIndex].name}}</text>
-                  <text class="bd-sci">{{birdList[selectedBirdIndex].sciName}}</text>
-                </view>
-                <view class="bd-features">
-                  <text class="bd-feature" wx:for="{{birdList[selectedBirdIndex].features}}" wx:for-item="feature" wx:key="*this">{{feature}}</text>
-                </view>
-                <view class="bd-tags">
-                  <view class="bd-tag" wx:for="{{birdList[selectedBirdIndex].tags}}" wx:for-item="tag" wx:key="*this"><text class="bd-tag-text">{{tag}}</text></view>
-                </view>
-              </view>
-            </view>
+      <view class="detail-modal-body" wx:if="{{birdList[selectedBirdIndex]}}">
+        <!-- 图集卡片 -->
+        <view class="detail-inner-card">
+          <text class="detail-inner-card-title">图集</text>
+          <view class="detail-gallery">
+            <image
+              class="detail-gallery-cover"
+              src="{{birdList[selectedBirdIndex].image}}"
+              mode="aspectFill"
+            />
+          </view>
+        </view>
+        <!-- 简介卡片 -->
+        <view class="detail-inner-card">
+          <text class="detail-inner-card-title">简介</text>
+          <view class="detail-intro-features">
+            <text class="detail-intro-feature" wx:for="{{birdList[selectedBirdIndex].features}}" wx:for-item="feature" wx:key="*this">{{feature}}</text>
           </view>
         </view>
       </view>

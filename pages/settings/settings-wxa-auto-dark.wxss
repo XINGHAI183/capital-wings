@@ -1,14 +1,15 @@
 @media (prefers-color-scheme: dark) {
     .container {
-        background-color: rgb(42, 42, 42);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 
     .title {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     .section {
         background-color: rgb(17, 17, 17);
+        box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.45);
     }
 
     .section-title {
@@ -20,16 +21,16 @@
     }
 
     .loading-container {
-        background-color: rgb(42, 42, 42);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 
     .loading-spinner {
         border: 6rpx solid rgb(64, 64, 64);
-        border-top: 6rpx solid rgb(127, 178, 133);
+        border-top: 6rpx solid #C8E8CA;
     }
 
     .loading-text {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     @keyframes spin {

@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
     .map-page {
-        background-color: rgb(42, 42, 42);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 }

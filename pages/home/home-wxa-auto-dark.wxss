@@ -1,14 +1,15 @@
 @media (prefers-color-scheme: dark) {
     .container {
-        background-color: rgb(42, 42, 42);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 
     .title {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     .card {
         background-color: rgb(17, 17, 17);
+        box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.45);
     }
 
     .card-title {
@@ -28,28 +29,10 @@
     }
 
     .daily-bird-inner {
-        background-color: rgba(127, 178, 133, 0.04);
+        background-color: #142E22;
     }
 
-    .daily-bird-card .bd-name {
-        color: rgb(127, 178, 133);
-    }
-
-    .daily-bird-card .bd-sci {
-        color: rgb(150, 150, 150);
-    }
-
-    .daily-bird-card .bd-feature {
-        color: rgb(120, 120, 120);
-    }
-
-    .daily-bird-card .bd-tag {
-        background-color: rgba(127, 178, 133, 0.08);
-    }
-
-    .daily-bird-card .bd-tag-text {
-        color: rgb(127, 178, 133);
-    }
+    /* 通用 .bd-* 鸟类卡片暗色样式已抽到 app-wxa-auto-dark.wxss */
 
     .season-bird-card .season-bird-title {
         color: rgb(209, 209, 209);
@@ -64,20 +47,16 @@
     }
 
     .loading-container {
-        background-color: rgb(31, 31, 31);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 
     .loading-text {
-        color: rgb(200, 200, 200);
+        color: #C8E8CA;
     }
 
     .loading-spinner {
         border: 6rpx solid rgb(64, 64, 64);
-        border-top: 6rpx solid rgb(127, 178, 133);
-    }
-
-    .loading-text {
-        color: rgb(127, 178, 133);
+        border-top: 6rpx solid #C8E8CA;
     }
 
     @keyframes spin {

@@ -1,4 +1,5 @@
 const { toMarkers } = require('../../data/spots/spots.js');
+const { getDailyBird } = require('../../data/birds/birds.js');
 
 Page({
   data: {
@@ -10,6 +11,7 @@ Page({
       { name: '鸟类3', image: '/assets/birds/season/season-3.jpg' }
     ],
     currentIndex: 0,
+    dailyBird: getDailyBird(),
     mapData: {
       longitude: 116.397463,
       latitude: 39.909187,

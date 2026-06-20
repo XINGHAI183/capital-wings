@@ -32,22 +32,20 @@
           <view class="bd-image">
             <image
               class="bd-image-img"
-              src="/assets/birds/guide/baitoubei.jpg"
+              src="{{dailyBird.image}}"
               mode="aspectFill"
             />
           </view>
           <view class="bd-info">
             <view class="bd-info-top">
-              <text class="bd-name">白头鹎</text>
-              <text class="bd-sci">Pycnonotus sinensis</text>
+              <text class="bd-name">{{dailyBird.name}}</text>
+              <text class="bd-sci">{{dailyBird.sciName}}</text>
             </view>
             <view class="bd-features">
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature" wx:for="{{dailyBird.features}}" wx:for-item="feature" wx:key="*this">{{feature}}</text>
             </view>
             <view class="bd-tags">
-              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
-              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+              <view class="bd-tag" wx:for="{{dailyBird.tags}}" wx:for-item="tag" wx:key="*this"><text class="bd-tag-text">{{tag}}</text></view>
             </view>
           </view>
         </view>

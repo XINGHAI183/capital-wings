@@ -21,10 +21,12 @@
 .tab-text {
   font-size: 40rpx;
   line-height: 1;
+  color: #555555;
 }
 
 .tab-bar-item.active .tab-text {
   font-weight: bold;
+  color: #1B3D2B;
 }
 
 @import 'custom-tab-bar-wxa-auto-dark.wxss'

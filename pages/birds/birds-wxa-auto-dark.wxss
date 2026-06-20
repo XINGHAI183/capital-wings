@@ -1,14 +1,15 @@
 @media (prefers-color-scheme: dark) {
     .container {
-        background-color: rgb(42, 42, 42);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 
     .title {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     .card {
         background-color: rgb(17, 17, 17);
+        box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.45);
     }
 
     .card-title {
@@ -19,33 +20,23 @@
         color: rgb(99, 99, 99);
     }
 
-    .bd-name {
-        color: rgb(127, 178, 133);
-    }
-
-    .bd-tag {
-        background-color: rgba(127, 178, 133, 0.08);
-    }
-
-    .bd-tag-text {
-        color: rgb(127, 178, 133);
-    }
+    /* 通用 .bd-* 鸟类卡片暗色样式已抽到 app-wxa-auto-dark.wxss */
 
     .filter-item {
         background-color: rgb(17, 17, 17);
-        box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.45);
     }
 
     .filter-item-hover {
-        background-color: rgba(127, 178, 133, 0.08);
+        background-color: rgba(200, 232, 202, 0.12);
     }
 
     .filter-item-active {
-        background-color: rgba(127, 178, 133, 0.15);
+        background-color: #2A5A42;
     }
 
     .filter-item-text {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     .ec-cover {
@@ -57,42 +48,71 @@
     }
 
     .ec-tag {
-        background-color: rgba(127, 178, 133, 0.08);
+        background-color: rgba(200, 232, 202, 0.12);
     }
 
     .ec-tag-text {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     .ec-location-icon {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
     }
 
     .ec-location-text {
-        color: rgb(127, 178, 133);
+        color: #C8E8CA;
+    }
+
+    .detail-modal-content {
+        background-color: rgb(17, 17, 17);
+    }
+
+    .detail-modal-header {
+        border-bottom: 1rpx solid rgba(255, 255, 255, 0.08);
+    }
+
+    .detail-modal-title {
+        color: #C8E8CA;
+    }
+
+    .detail-modal-close-hover {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .detail-inner-card {
+        background-color: #142E22;
+    }
+
+    .detail-inner-card-title {
+        color: rgb(209, 209, 209);
+    }
+
+    .detail-intro-feature {
+        color: rgb(209, 209, 209);
+    }
+
+    .detail-gallery-cover {
+        background-color: rgb(64, 64, 64);
     }
 
     .loading-container {
-        background-color: rgb(31, 31, 31);
+        background: linear-gradient(180deg, #1B3D2B 0%, #0F2319 100%);
     }
 
     .loading-text {
-        color: rgb(200, 200, 200);
+        color: #C8E8CA;
     }
 
     .loading-spinner {
         border: 6rpx solid rgb(64, 64, 64);
-        border-top: 6rpx solid rgb(127, 178, 133);
-    }
-
-    .loading-text {
-        color: rgb(127, 178, 133);
+        border-top: 6rpx solid #C8E8CA;
     }
 
     @keyframes spin {
         0% {
             transform: rotate(0deg);
         }
+
         100% {
             transform: rotate(360deg);
         }
