@@ -33,102 +33,31 @@
     </view>
     <!-- 按拼音：鸟类卡片列表 -->
     <block wx:if="{{filterMode === 'pinyin'}}">
-      <view class="card">
+      <view
+        class="card"
+        wx:for="{{birdList}}"
+        wx:key="index"
+        data-index="{{index}}"
+        bindtap="onBirdCardTap"
+      >
         <view class="bd-card-row">
           <view class="bd-image">
             <image
               class="bd-image-img"
-              src="/assets/birds/guide/baitoubei.jpg"
+              src="{{item.image}}"
               mode="aspectFill"
             />
           </view>
           <view class="bd-info">
             <view class="bd-info-top">
-              <text class="bd-name">白头鹎</text>
-              <text class="bd-sci">Pycnonotus sinensis</text>
+              <text class="bd-name">{{item.name}}</text>
+              <text class="bd-sci">{{item.sciName}}</text>
             </view>
             <view class="bd-features">
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
+              <text class="bd-feature" wx:for="{{item.features}}" wx:for-item="feature" wx:key="*this">{{feature}}</text>
             </view>
             <view class="bd-tags">
-              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
-              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
-            </view>
-          </view>
-        </view>
-      </view>
-      <view class="card">
-        <view class="bd-card-row">
-          <view class="bd-image">
-            <image
-              class="bd-image-img"
-              src="/assets/birds/guide/damajian.jpg"
-              mode="aspectFill"
-            />
-          </view>
-          <view class="bd-info">
-            <view class="bd-info-top">
-              <text class="bd-name">大麻鳽</text>
-              <text class="bd-sci">Botaurus stellaris</text>
-            </view>
-            <view class="bd-features">
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-            </view>
-            <view class="bd-tags">
-              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
-              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
-            </view>
-          </view>
-        </view>
-      </view>
-      <view class="card">
-        <view class="bd-card-row">
-          <view class="bd-image">
-            <image
-              class="bd-image-img"
-              src="/assets/birds/guide/jiaoliao.jpg"
-              mode="aspectFill"
-            />
-          </view>
-          <view class="bd-info">
-            <view class="bd-info-top">
-              <text class="bd-name">鹪鹩</text>
-              <text class="bd-sci">Troglodytes troglodytes</text>
-            </view>
-            <view class="bd-features">
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-            </view>
-            <view class="bd-tags">
-              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
-              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
-            </view>
-          </view>
-        </view>
-      </view>
-      <view class="card">
-        <view class="bd-card-row">
-          <view class="bd-image">
-            <image
-              class="bd-image-img"
-              src="/assets/birds/guide/sandaomeicaowu.jpg"
-              mode="aspectFill"
-            />
-          </view>
-          <view class="bd-info">
-            <view class="bd-info-top">
-              <text class="bd-name">三道眉草鹀</text>
-              <text class="bd-sci">Emberiza cioides</text>
-            </view>
-            <view class="bd-features">
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-              <text class="bd-feature">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</text>
-            </view>
-            <view class="bd-tags">
-              <view class="bd-tag"><text class="bd-tag-text">标签1</text></view>
-              <view class="bd-tag"><text class="bd-tag-text">标签2</text></view>
+              <view class="bd-tag" wx:for="{{item.tags}}" wx:for-item="tag" wx:key="*this"><text class="bd-tag-text">{{tag}}</text></view>
             </view>
           </view>
         </view>
@@ -255,5 +184,46 @@
         </view>
       </view>
     </block>
+  </view>
+
+  <!-- 图鉴详情弹窗 -->
+  <view class="detail-modal {{closing ? 'detail-modal-closing' : ''}}" wx:if="{{showDetail}}" catchtouchmove="preventTouchMove">
+    <view class="detail-modal-mask" />
+    <view class="detail-modal-content" catchtap="onModalContentTap">
+      <view class="detail-modal-header">
+        <text class="detail-modal-title">图鉴详情</text>
+        <view class="detail-modal-close" catchtap="onCloseDetail">
+          <text class="detail-modal-close-text">×</text>
+        </view>
+      </view>
+      <view class="detail-modal-body">
+        <view class="detail-bird-card" wx:if="{{birdList[selectedBirdIndex]}}">
+          <view class="detail-bird-inner">
+            <view class="bd-card-row">
+              <view class="bd-image">
+                <image
+                  class="bd-image-img"
+                  src="{{birdList[selectedBirdIndex].image}}"
+                  mode="aspectFill"
+                />
+              </view>
+              <view class="bd-info">
+                <view class="bd-info-top">
+                  <text class="bd-name">{{birdList[selectedBirdIndex].name}}</text>
+                  <text class="bd-sci">{{birdList[selectedBirdIndex].sciName}}</text>
+                </view>
+                <view class="bd-features">
+                  <text class="bd-feature" wx:for="{{birdList[selectedBirdIndex].features}}" wx:for-item="feature" wx:key="*this">{{feature}}</text>
+                </view>
+                <view class="bd-tags">
+                  <view class="bd-tag" wx:for="{{birdList[selectedBirdIndex].tags}}" wx:for-item="tag" wx:key="*this"><text class="bd-tag-text">{{tag}}</text></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="detail-modal-top-closer" bindtap="onCloseDetail" />
   </view>
 </view>

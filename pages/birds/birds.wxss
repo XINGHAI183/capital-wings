@@ -134,12 +134,18 @@
   display: flex;
   flex-direction: column;
   gap: 6rpx;
+  margin: 8rpx 0;
 }
 
 .bd-feature {
   font-size: 24rpx;
   line-height: 1.4;
   color: #888888;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bd-tags {
@@ -317,6 +323,117 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* 图鉴详情弹窗 */
+.detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20000;
+}
+
+.detail-modal-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity 350ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.detail-modal-closing .detail-modal-mask {
+  opacity: 0;
+}
+
+.detail-modal-top-closer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130rpx;
+}
+
+.detail-modal-content {
+  position: absolute;
+  top: 130rpx;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 0;
+  background-color: #ffffff;
+  border-radius: 24rpx 24rpx 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: detailSlideUp 350ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.detail-modal-closing .detail-modal-content {
+  animation: detailSlideDown 350ms cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+@keyframes detailSlideUp {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes detailSlideDown {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100%); }
+}
+
+.detail-modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.08);
+}
+
+.detail-modal-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #1B3D2B;
+}
+
+.detail-modal-close {
+  width: 56rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-modal-close-text {
+  font-size: 48rpx;
+  line-height: 1;
+  color: #666666;
+}
+
+.detail-modal-body {
+  flex: 1;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-bird-card {
+  width: 100%;
+}
+
+.detail-bird-inner {
+  background-color: #F4F9ED;
+  border-radius: 12rpx;
+  padding: 20rpx;
+}
+
+.detail-bird-inner .bd-card-row {
+  margin: 0;
 }
 
 @import 'birds-wxa-auto-dark.wxss'

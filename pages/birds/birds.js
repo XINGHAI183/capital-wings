@@ -2,7 +2,40 @@ Page({
   data: {
     isLoading: true,
     hasLoaded: false,
-    filterMode: 'pinyin'
+    filterMode: 'pinyin',
+    showDetail: false,
+    closing: false,
+    selectedBirdIndex: 0,
+    birdList: [
+      {
+        name: '白头鹎',
+        sciName: 'Pycnonotus sinensis',
+        image: '/assets/birds/guide/baitoubei.jpg',
+        features: ['体长17~22cm，体重26~43g。雌雄羽色相似，白色枕环从眼睛后部延伸到颈背，是该物种的显著特征。白头鹎头顶、喙黑色，颏、喉部白色，颊、耳羽、颧纹黑褐色，耳羽后有白色斑块，上体灰褐色，下体灰白色，翅缘为黄绿色，胸部灰色，臀部白色，跗蹠、爪深褐色，翅尾深褐色；幼鸟头部为橄榄色，胸部有灰色斑纹。'],
+        tags: ['标签1', '标签2']
+      },
+      {
+        name: '大麻鳽',
+        sciName: 'Botaurus stellaris',
+        image: '/assets/birds/guide/damajian.jpg',
+        features: ['XXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'],
+        tags: ['标签1', '标签2']
+      },
+      {
+        name: '鹪鹩',
+        sciName: 'Troglodytes troglodytes',
+        image: '/assets/birds/guide/jiaoliao.jpg',
+        features: ['XXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'],
+        tags: ['标签1', '标签2']
+      },
+      {
+        name: '三道眉草鹀',
+        sciName: 'Emberiza cioides',
+        image: '/assets/birds/guide/sandaomeicaowu.jpg',
+        features: ['XXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'],
+        tags: ['标签1', '标签2']
+      }
+    ]
   },
   onLoad() {
     // 如果是首次加载，显示加载动画
@@ -76,5 +109,30 @@ Page({
   },
   onEcosystemArrowTap() {
     // TODO: 跳转到生态区详情页
+  },
+  onBirdCardTap(e) {
+    const index = e.currentTarget.dataset.index;
+    this.setData({
+      selectedBirdIndex: index,
+      showDetail: true
+    });
+  },
+  onCloseDetail() {
+    if (this.data.closing) return;
+    this.setData({
+      closing: true
+    });
+    setTimeout(() => {
+      this.setData({
+        showDetail: false,
+        closing: false
+      });
+    }, 350);
+  },
+  onModalContentTap() {
+    // 阻止点击弹窗内容时冒泡关闭
+  },
+  preventTouchMove() {
+    // 阻止弹窗上的滑动事件穿透到下方页面
   }
 })
