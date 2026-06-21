@@ -70,7 +70,7 @@ capital-wings/
 
 ## License
 
-本项目采用 MIT 协议，详见 [LICENSE](./LICENSE)。
+MIT © XINGHAI183
 
 ---
 
