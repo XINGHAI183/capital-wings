@@ -6,9 +6,9 @@ Page({
     isLoading: true,
     hasLoaded: false,
     seasonBirds: [
-      { name: '鸟类1', image: '/assets/birds/season/season-1.jpg' },
-      { name: '鸟类2', image: '/assets/birds/season/season-2.jpg' },
-      { name: '鸟类3', image: '/assets/birds/season/season-3.jpg' }
+      { name: '喜鹊', image: '/assets/birds/season/season-1.jpg' },
+      { name: '白眉歌鸫', image: '/assets/birds/season/season-2.jpg' },
+      { name: '黄腹山雀', image: '/assets/birds/season/season-3.jpg' }
     ],
     currentIndex: 0,
     dailyBird: getDailyBird(),

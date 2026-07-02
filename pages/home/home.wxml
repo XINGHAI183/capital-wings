@@ -25,6 +25,31 @@
       </view>
     </view>
     
+    <view class="card season-bird-card">
+      <view class="season-bird-header">
+        <text class="card-title season-bird-title">当季常见鸟类</text>
+        <text class="season-bird-link-top">鸟类图鉴 ›</text>
+      </view>
+      <view class="season-bird-image-wrapper">
+        <image
+          class="season-bird-image"
+          src="{{seasonBirds[currentIndex].image}}"
+          mode="aspectFill"
+        ></image>
+        <view class="season-bird-gradient"></view>
+        <view class="season-bird-overlay-bottom">
+          <text class="season-bird-name">{{seasonBirds[currentIndex].name}}</text>
+          <text class="season-bird-detail-link">查看详情 ›</text>
+        </view>
+        <view class="season-arrow season-arrow-left" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onPrevSeasonBird">
+          <text class="arrow-text">‹</text>
+        </view>
+        <view class="season-arrow season-arrow-right" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onNextSeasonBird">
+          <text class="arrow-text">›</text>
+        </view>
+      </view>
+    </view>
+
     <view class="card daily-bird-card" bindtap="onDailyBirdTap">
       <text class="card-title">为你推荐</text>
       <view class="daily-bird-inner">
@@ -52,31 +77,6 @@
       </view>
     </view>
     
-    <view class="card season-bird-card">
-      <view class="season-bird-header">
-        <text class="card-title season-bird-title">当季常见鸟类</text>
-        <text class="season-bird-link-top">鸟类图鉴 ›</text>
-      </view>
-      <view class="season-bird-image-wrapper">
-        <image
-          class="season-bird-image"
-          src="{{seasonBirds[currentIndex].image}}"
-          mode="aspectFill"
-        ></image>
-        <view class="season-bird-gradient"></view>
-        <view class="season-bird-overlay-bottom">
-          <text class="season-bird-name">{{seasonBirds[currentIndex].name}}</text>
-          <text class="season-bird-detail-link">查看详情 ›</text>
-        </view>
-        <view class="season-arrow season-arrow-left" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onPrevSeasonBird">
-          <text class="arrow-text">‹</text>
-        </view>
-        <view class="season-arrow season-arrow-right" hover-class="season-arrow-hover" hover-stay-time="120" hover-start-time="0" bindtap="onNextSeasonBird">
-          <text class="arrow-text">›</text>
-        </view>
-      </view>
-    </view>
-    
     <view class="card">
       <text class="card-title">观鸟记录</text>
       <text class="card-desc">记录你的观鸟足迹</text>
@@ -85,6 +85,11 @@
     <view class="card">
       <text class="card-title">AI识鸟</text>
       <text class="card-desc">拍照识别鸟类</text>
+    </view>
+
+    <view class="card">
+      <text class="card-title">防撞专题</text>
+      <text class="card-desc">守护鸟类安全飞行</text>
     </view>
   </view>
 </view>
